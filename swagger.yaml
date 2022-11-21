@@ -22,13 +22,13 @@ paths:
               allOf:
                 - $ref: "#/components/schemas/RegisterRequest"
                 - example:
-                    name: alex
-                    email: alex@gmail.com
-                    password: alex123
+                    name: user
+                    email: user@gmail.com
+                    password: user123
             example:
-              name: alex
-              email: alex@gmail.com
-              password: alex123
+              name: user
+              email: user@gmail.com
+              password: user123
         required: true
       responses:
         "200":
@@ -51,11 +51,11 @@ paths:
               allOf:
                 - $ref: "#/components/schemas/LoginRequest"
                 - example:
-                    email: buyung@gmail.com
-                    password: buyung123
+                    email: user@gmail.com
+                    password: user123
             example:
-              email: buyung@gmail.com
-              password: buyung123
+              email: user@gmail.com
+              password: user123
         required: true
       responses:
         "200":
@@ -78,10 +78,10 @@ paths:
               allOf:
                 - $ref: "#/components/schemas/CreateJobRequest"
                 - example:
-                    company: PT. Telkom Indonesia
+                    company: PT. Github
                     position: Product Manager
             example:
-              company: PT. Telkom Indonesia
+              company: PT. Github
               position: Product Manager
         required: true
       responses:
@@ -184,9 +184,9 @@ components:
         password:
           type: string
       example:
-        name: alex
-        email: alex@gmail.com
-        password: alex123
+        name: user
+        email: user@gmail.com
+        password: user123
     LoginRequest:
       title: LoginRequest
       required:
@@ -199,8 +199,8 @@ components:
         password:
           type: string
       example:
-        email: buyung@gmail.com
-        password: buyung123
+        email: user@gmail.com
+        password: user123
     CreateJobRequest:
       title: CreateJobRequest
       required:
@@ -213,7 +213,7 @@ components:
         position:
           type: string
       example:
-        company: PT. Telkom Indonesia
+        company: PT. Github Indonesia
         position: Product Manager
     UpdateJobRequest:
       title: UpdateJobRequest
